@@ -36,7 +36,7 @@ const createManyPeople = (arrayOfPeople, done) => {
       favoriteFoods: ["other", "another"]
     }
   ];
-  Person.create(persons, (err, data) => {
+  Person.create(arrayOfPeople, (err, data) => {
     if (err) console.error(err);
     done(null, data);
   });
