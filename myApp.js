@@ -85,7 +85,7 @@ const findAndUpdate = (personName, done) => {
     {new: true},
     (err, updatedDocument) => {
       if (err) console.error(err);
-      done(null /*, data*/);
+      done(null, updatedDocument);
     }
   );
 };
